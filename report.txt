@@ -1,0 +1,166 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 26 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: neurosat_tpu.py
+--------------------------------------------------------------------------------
+neurosat_tpu.py:8:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:14:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:15:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:16:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:17:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:19:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:20:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:21:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:22:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:23:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:24:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:25:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:26:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:27:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:28:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:29:0: ERROR: Using member tf.flags.DEFINE_float in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:30:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:31:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:32:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:33:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:36:8: ERROR: Using member tf.flags.FLAGS in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+neurosat_tpu.py:147:36: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+neurosat_tpu.py:158:39: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+neurosat_tpu.py:397:14: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+neurosat_tpu.py:406:14: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+neurosat_tpu.py:421:23: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'neurosat_tpu.py'
+ outputting to 'neurosat_tpu_tf2.py'
+--------------------------------------------------------------------------------
+
+8:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+14:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+15:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+16:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+17:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+19:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+20:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+21:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+22:0: ERROR: Using member tf.flags.DEFINE_string in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+23:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+24:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+25:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+26:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+27:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+28:0: ERROR: Using member tf.flags.DEFINE_integer in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+29:0: ERROR: Using member tf.flags.DEFINE_float in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+30:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+31:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+32:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+33:0: ERROR: Using member tf.flags.DEFINE_bool in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+36:8: ERROR: Using member tf.flags.FLAGS in deprecated module tf.flags. tf.flags and tf.app.flags have been removed, please use the argparse or absl modules if you need command line parsing.
+76:26: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+85:33: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+86:30: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+91:21: INFO: Added keywords to args of function 'tf.shape'
+92:23: INFO: Added keywords to args of function 'tf.shape'
+93:21: INFO: Added keywords to args of function 'tf.shape'
+97:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+98:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+107:16: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+127:30: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+131:26: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+132:19: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+133:41: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+141:31: INFO: Renamed 'tf.div' to 'tf.compat.v1.div'
+142:44: INFO: Added keywords to args of function 'tf.reduce_sum'
+142:83: INFO: Renamed keyword argument for tf.reduce_sum from keep_dims to keepdims
+146:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+146:50: INFO: Renamed 'tf.AUTO_REUSE' to 'tf.compat.v1.AUTO_REUSE'
+147:36: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+147:36: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+150:28: INFO: tf.random_uniform_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+150:28: INFO: Renamed 'tf.random_uniform_initializer' to 'tf.compat.v1.random_uniform_initializer'
+158:39: WARNING: tf.get_variable requires manual check. tf.get_variable returns ResourceVariables by default in 2.0, which have well-defined semantics and are stricter about shapes. You can disable this behavior by passing use_resource=False, or by calling tf.compat.v1.disable_resource_variables().
+158:39: INFO: Renamed 'tf.get_variable' to 'tf.compat.v1.get_variable'
+161:28: INFO: tf.random_uniform_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+161:28: INFO: Renamed 'tf.random_uniform_initializer' to 'tf.compat.v1.random_uniform_initializer'
+191:43: INFO: Added keywords to args of function 'tf.transpose'
+226:42: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+228:42: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+233:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+234:16: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+235:31: INFO: Added keywords to args of function 'tf.reduce_sum'
+236:16: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+245:31: INFO: tf.losses.sigmoid_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+245:31: INFO: Renamed 'tf.losses.sigmoid_cross_entropy' to 'tf.compat.v1.losses.sigmoid_cross_entropy'
+252:28: INFO: tf.losses.sigmoid_cross_entropy requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+252:28: INFO: Renamed 'tf.losses.sigmoid_cross_entropy' to 'tf.compat.v1.losses.sigmoid_cross_entropy'
+257:32: INFO: Added keywords to args of function 'tf.reduce_sum'
+259:18: INFO: Added keywords to args of function 'tf.reduce_sum'
+260:29: INFO: Added keywords to args of function 'tf.reduce_mean'
+268:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+268:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+269:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+269:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+270:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+270:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+272:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+272:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+273:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+273:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+274:16: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+274:16: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+274:55: INFO: Added keywords to args of function 'tf.reduce_sum'
+278:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+278:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+279:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+279:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+281:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+281:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+282:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+282:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+283:12: INFO: tf.summary.scalar requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+283:12: INFO: Renamed 'tf.summary.scalar' to 'tf.compat.v1.summary.scalar'
+284:30: INFO: Added keywords to args of function 'tf.reduce_sum'
+304:43: INFO: tf.metrics.mean_absolute_error requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+304:43: INFO: Renamed 'tf.metrics.mean_absolute_error' to 'tf.compat.v1.metrics.mean_absolute_error'
+307:46: INFO: tf.metrics.mean_absolute_error requires manual check. tf.metrics have been replaced with object oriented versions in TF 2.0 and after. The metric function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+307:46: INFO: Renamed 'tf.metrics.mean_absolute_error' to 'tf.compat.v1.metrics.mean_absolute_error'
+314:15: INFO: Renamed 'tf.contrib.tpu.TPUEstimatorSpec' to 'tf.compat.v1.estimator.tpu.TPUEstimatorSpec'
+324:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+327:24: INFO: Renamed 'tf.contrib.tpu.CrossShardOptimizer' to 'tf.compat.v1.tpu.CrossShardOptimizer'
+329:56: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+331:15: INFO: Renamed 'tf.contrib.tpu.TPUEstimatorSpec' to 'tf.compat.v1.estimator.tpu.TPUEstimatorSpec'
+337:15: INFO: Renamed 'tf.contrib.tpu.TPUEstimatorSpec' to 'tf.compat.v1.estimator.tpu.TPUEstimatorSpec'
+372:15: INFO: Added keywords to args of function 'tf.parse_single_example'
+372:15: INFO: Renamed 'tf.parse_single_example' to 'tf.io.parse_single_example'
+375:26: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+376:23: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+377:26: INFO: Renamed 'tf.FixedLenFeature' to 'tf.io.FixedLenFeature'
+380:38: INFO: Renamed 'tf.matching_files' to 'tf.io.matching_files'
+397:14: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+406:14: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+421:23: WARNING: Changing dataset.make_one_shot_iterator() to tf.compat.v1.data.make_one_shot_iterator(dataset). Please check this transformation.
+
+426:14: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+433:2: INFO: Renamed 'tf.logging.set_verbosity' to 'tf.compat.v1.logging.set_verbosity'
+433:27: INFO: Renamed 'tf.logging.INFO' to 'tf.compat.v1.logging.INFO'
+436:29: INFO: Renamed 'tf.contrib.cluster_resolver.TPUClusterResolver' to 'tf.distribute.cluster_resolver.TPUClusterResolver'
+442:15: INFO: Renamed 'tf.contrib.tpu.RunConfig' to 'tf.compat.v1.estimator.tpu.RunConfig'
+445:21: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+447:17: INFO: Renamed 'tf.contrib.tpu.TPUConfig' to 'tf.compat.v1.estimator.tpu.TPUConfig'
+450:14: INFO: Renamed 'tf.contrib.tpu.TPUEstimator' to 'tf.compat.v1.estimator.tpu.TPUEstimator'
+476:2: INFO: Renamed 'tf.app.run' to 'tf.compat.v1.app.run'
+--------------------------------------------------------------------------------
+
