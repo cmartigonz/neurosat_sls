@@ -43,13 +43,13 @@ def main():
     filename = "train_{}_sr_{}.tfrecord".format(job, complexity)
     options = {
         "PROCESSOR_NUM": 24,
-        "CLAUSE_NUM": 10*complexity,
+        "CLAUSE_NUM": 4*complexity,
         "VARIABLE_NUM": complexity,
         "MIN_VARIABLE_NUM": 1,
         "BATCH_SIZE": 1,
-        "CLAUSE_SIZE": 10*complexity,
+        "CLAUSE_SIZE": 4*complexity,
         "MIN_CLAUSE_NUM": 1,
-        "SR_GENERATOR": True
+        "SR_GENERATOR": False
     }
     n_observations = args["observations"]
     print(options)
